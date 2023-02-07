@@ -1,0 +1,23 @@
+{
+  "name": "lenskart_clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -o styles index.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaireflectiontp/Lenskart_Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaireflectiontp/Lenskart_Clone/issues"
+  },
+  "homepage": "https://github.com/jaireflectiontp/Lenskart_Clone#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
