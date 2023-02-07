@@ -1,0 +1,129 @@
+@import "./mixin";
+@import "./variable";
+
+.footer_link {
+    text-decoration: none;
+    color: $footerText
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    color: $footerText;
+    background-color: $footerBg;
+
+    .footer_container {
+        @include max_width;
+
+        .footer_heading {
+            font-size: 40px;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-bottom: 30px !important;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+
+        p .footer_link {
+            color: $footerLink;
+        }
+
+        .footer_product_accordion {
+            display: grid;
+            grid-template-columns: 420px 420px 420px;
+            gap: 70px;
+            margin: 50px 0 25px 0;
+            box-sizing: border-box;
+
+            .product_acc {
+                .info_panel {
+                    display: none;
+                    padding: 5px;
+                    font-size: 13px;
+                    border-left: 1px solid #fcfcfc;
+                    border-right: 1px solid #fcfcfc;
+                }
+
+                .showDetail {
+                    border: none;
+                    width: 100%;
+                    text-align: left;
+                    font-size: 20px;
+                    background: none;
+                    color: $footerText;
+                    cursor: pointer;
+                    padding-bottom: 10px;
+                }
+
+                .bottom_border {
+                    border-bottom: 1px solid #fcfcfc;
+                }
+            }
+        }
+
+        .footer_nav {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .nav_left,
+            .nav-right {
+                width: 50%;
+            }
+
+            .nav_left {
+                display: grid;
+                grid-template-columns: auto auto auto;
+
+                .footer_service_col,
+                .footer_about_col,
+                .footer_help_col {
+                    h3 {
+                        font-size: 25px;
+                        font-weight: 100;
+                        margin-bottom: 5px !important;
+                    }
+
+                    ul {
+                        margin: 0;
+                        padding: 0;
+
+                        li {
+                            display: block;
+                            list-style: none;
+                            padding: 6px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer_bottom {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .bottom_left {
+                span {
+                    padding-right: 30px;
+                }
+            }
+
+            .bottom_right {
+                span:first-child {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                span {
+                    font-size: 20px;
+                    padding-left: 30px;
+                }
+            }
+        }
+
+    }
+}

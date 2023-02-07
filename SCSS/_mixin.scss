@@ -1,0 +1,6 @@
+@mixin max_width {
+    max-width: 1400px;
+    width: 100%;
+    margin: 25px auto;
+    overflow: hidden;
+}
