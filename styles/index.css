@@ -1,0 +1,193 @@
+.login-parent {
+  position: relative; }
+
+.login-inner-parent {
+  z-index: 1050 !important;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0; }
+
+.fade-login-modal {
+  opacity: .5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  transition: opacity .15s linear;
+  z-index: 1; }
+
+.login-modal-content {
+  position: relative;
+  margin: 100px auto;
+  width: fit-content;
+  display: flex;
+  z-index: 2;
+  background: white;
+  /* box-shadow: 0 1px 4px rgb(0 0 0 / 10%);*/
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: navy; }
+
+.login-inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 472px;
+  border-radius: 12px;
+  transition: all ease .5s; }
+
+.login-close-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 18px;
+  background: #fff;
+  border-radius: 100px;
+  cursor: pointer;
+  z-index: 2;
+  z-index: 1100 !important;
+  transition: all ease .5s; }
+
+.login-animate-left {
+  animation: 0.5s !important;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-direction: normal; }
+
+.login-details-modal {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 40px 24px;
+  gap: 10px;
+  transition: all ease .5s; }
+
+.login-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  max-width: 1000px;
+  transition: all 1s ease;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -.02em;
+  color: lightskyblue; }
+
+.login-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 6px;
+  width: 376px;
+  background: white;
+  border: 1px solid lightgrey;
+  /*  box-shadow: 0 1px 2px rgb(16 24 40 / 5%);*/
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -.02em;
+  color: grey; }
+
+.login-whatsapp-box {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+  color: grey;
+  font-size: 13px; }
+
+.checkbox-login-whatsapp {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: 700;
+  max-width: 100%;
+  align-items: center;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row; }
+
+.login-whatsapp-text {
+  align-items: center;
+  letter-spacing: -.02em;
+  color: gray;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px; }
+
+.whatsapp-logo-login {
+  width: 25px;
+  margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px; }
+
+.login-button {
+  background-color: lightgray;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  height: 48px;
+  padding: 10px 18px;
+  border: none; }
+
+.login-signup-shortcut {
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -.02em;
+  color: #000042;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400; }
+
+.login-signup-click {
+  font-weight: 700;
+  margin: 0 4px;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.login-error-msg {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -.02em;
+  color: red; }
+
+.login-signin-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: inherit;
+  color: black; }
