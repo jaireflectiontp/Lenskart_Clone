@@ -1,0 +1,25 @@
+@import "../variable";
+
+.customer_review_section{
+    background-color: $reviewBg;
+    font-family: sans-serif;
+    padding: 60px 0;
+    .section_heading{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: initial;
+    text-transform: uppercase;
+    margin:0 0 40px 0;
+
+    }
+   .review_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px;
+    .review_clips{
+        width: 32%;
+    }
+   }
+}
