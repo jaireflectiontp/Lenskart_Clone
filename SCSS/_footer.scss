@@ -45,6 +45,14 @@ footer {
                     font-size: 13px;
                     border-left: 1px solid #fcfcfc;
                     border-right: 1px solid #fcfcfc;
+
+                    .footer_link {
+                        color: $footerLink;
+                    }
+
+                    .brand_products {
+                        margin: 8px 0;
+                    }
                 }
 
                 .showDetail {
@@ -96,6 +104,23 @@ footer {
                             list-style: none;
                             padding: 6px 0;
                         }
+                    }
+                }
+            }
+
+            .nav_right {
+                display: grid;
+                place-items: center;
+
+                .nav_right_wrap {
+                    .appStores {
+                        margin-bottom: 10px;
+                    }
+
+                    .download_text {
+                        margin: 0;
+                        font-family: monospace;
+                        font-size: 15px;
                     }
                 }
             }

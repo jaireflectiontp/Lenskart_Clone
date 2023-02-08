@@ -34,6 +34,10 @@ footer {
         font-size: 13px;
         border-left: 1px solid #fcfcfc;
         border-right: 1px solid #fcfcfc; }
+        footer .footer_container .footer_product_accordion .product_acc .info_panel .footer_link {
+          color: #329C92; }
+        footer .footer_container .footer_product_accordion .product_acc .info_panel .brand_products {
+          margin: 8px 0; }
       footer .footer_container .footer_product_accordion .product_acc .showDetail {
         border: none;
         width: 100%;
@@ -72,6 +76,15 @@ footer {
             display: block;
             list-style: none;
             padding: 6px 0; }
+      footer .footer_container .footer_nav .nav_right {
+        display: grid;
+        place-items: center; }
+        footer .footer_container .footer_nav .nav_right .nav_right_wrap .appStores {
+          margin-bottom: 10px; }
+        footer .footer_container .footer_nav .nav_right .nav_right_wrap .download_text {
+          margin: 0;
+          font-family: monospace;
+          font-size: 15px; }
     footer .footer_container .footer_bottom {
       padding-top: 20px;
       display: flex;
