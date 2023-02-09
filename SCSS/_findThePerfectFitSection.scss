@@ -1,8 +1,12 @@
-
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@import './mixin';
+@import './variable';
 body {
-    margin: 0;
-    padding: 0;
-    font-family: futurastd-book, helvetica neue, Helvetica, Arial, sans-serif;
+    @include mar_pad;
+    font-family:Roboto-Regular, Arial, sans-serif;
     font-size: 13px;
     line-height: 1.42857;
     color: #333;
@@ -17,14 +21,14 @@ h4:after {
 }
 
 h4 {
-    display: flex;
+    display:$Fit_flex;
     flex-direction: row;
     width: 94%;
     color: black;
 }
 
 .fit_heading {
-    font-family: 'FuturaStd-Medium';
+    font-family:Roboto-Regular, Arial, sans-serif;
     letter-spacing: 0.5px;
     font-size: 30px;
 }
@@ -41,7 +45,7 @@ h4 {
     .fitSection-wrapper {
         margin: 0 auto;
         width: 80%;
-        display: flex;
+        display: $Fit_flex;
         justify-content: center;
 
         .left_side {
@@ -53,8 +57,7 @@ h4 {
         }
 
         .right_side {
-            margin: 0;
-            padding: 0;
+            @include mar_pad;
 
             .right-img {
                 max-width: 612px;
