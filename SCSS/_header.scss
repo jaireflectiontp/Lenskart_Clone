@@ -7,15 +7,18 @@
 @import './variable';
 
 body {
-    margin: 0;
-    padding: 0;
+    @include mar_pad;
     color: black;
+    overflow: hidden;
 
     .header {
-        width: $header_width;
-        max-width: 1520px;
+        width: $header_width;      
 
-        .header-wrapper {
+        .header-wrapper {           
+            max-width: 1500px;
+            margin: auto;
+            padding: 0 20px;
+
             .top-header {
                 @include header_flex;
                 align-items: center;
@@ -29,6 +32,8 @@ body {
                 }
 
                 ul {
+                    padding: 0;
+                    margin: 6px;
                     font-size: 1.2rem;
                     display: flex;
 
@@ -50,47 +55,43 @@ body {
                     }
                 }
             }
-//-------------------------bottom_header-----------------------------------------------------
+
+            //-------------------------bottom_header-----------------------------------------------------
             .botom-header {
                 .botom-header-wrapper {
                     @include header_flex;
-                    padding: 0 2vw;
-                    margin: 4px auto;
+                    width: $header_width;
                     align-items: center;
                     justify-items: center;
 
                     .logo {
                         @include header_flex;
                         align-items: center;
-                        max-width: 405px;
-                        width: $header_width;
-
+                        width: 27%;
 
                         .logo_contact {
-                            max-width: 9rem;
-                            width: 18rem;
+                            width: 125px;
                         }
                     }
 
                     .search_bar {
-                        width: $header_width;
-                        margin-left: 27px;
+                        width: 45%;
+                        text-align: center;
 
                         .search-bar-input {
-                            max-width: 600px;
+                            font-size: 17px;
                             padding: 6px;
-                            width: $header_width;
+                            width: 37.2rem;
                             border-radius: 5px;
                             height: 25px;
                         }
                     }
 
                     .shopping_option {
+                        width: 28%;
+
                         ul {
                             @include header_flex;
-                            width: $header_width;
-                            max-width: 361px;
-                            padding-right: 94px;
 
                             li {
                                 list-style: none;
@@ -108,17 +109,3 @@ body {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//--------------------------botom-header------------------------------------------------------------//
