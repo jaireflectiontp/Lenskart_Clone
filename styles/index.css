@@ -1,1 +1,9 @@
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 5rem !important;
+  height: 5rem !important; }
 
+.carousel-control-prev {
+  left: -4% !important; }
+
+.carousel-control-next {
+  right: -4% !important; }
