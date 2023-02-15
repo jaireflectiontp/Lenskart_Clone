@@ -1,3 +1,104 @@
+
+.footer_link {
+  text-decoration: none;
+  color: #fcfcfc; }
+
+footer {
+  width: 100%;
+  padding: 10px 0;
+  color: #fcfcfc;
+  background-color: #010044; }
+  footer .footer_container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 25px auto;
+    overflow: hidden; }
+    footer .footer_container .footer_heading {
+      font-size: 40px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      margin-bottom: 30px !important; }
+    footer .footer_container p {
+      margin: 20px 0;
+      line-height: 1.5; }
+    footer .footer_container p .footer_link {
+      color: #329C92; }
+    footer .footer_container .footer_product_accordion {
+      display: grid;
+      grid-template-columns: 420px 420px 420px;
+      gap: 70px;
+      margin: 50px 0 25px 0;
+      box-sizing: border-box; }
+      footer .footer_container .footer_product_accordion .product_acc .info_panel {
+        display: none;
+        padding: 5px;
+        font-size: 13px;
+        border-left: 1px solid #fcfcfc;
+        border-right: 1px solid #fcfcfc; }
+        footer .footer_container .footer_product_accordion .product_acc .info_panel .footer_link {
+          color: #329C92; }
+        footer .footer_container .footer_product_accordion .product_acc .info_panel .brand_products {
+          margin: 8px 0; }
+      footer .footer_container .footer_product_accordion .product_acc .showDetail {
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        background: none;
+        color: #fcfcfc;
+        cursor: pointer;
+        padding-bottom: 10px; }
+      footer .footer_container .footer_product_accordion .product_acc .bottom_border {
+        border-bottom: 1px solid #fcfcfc; }
+    footer .footer_container .footer_nav {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between; }
+      footer .footer_container .footer_nav .nav_left,
+      footer .footer_container .footer_nav .nav-right {
+        width: 50%; }
+      footer .footer_container .footer_nav .nav_left {
+        display: grid;
+        grid-template-columns: auto auto auto; }
+        footer .footer_container .footer_nav .nav_left .footer_service_col h3,
+        footer .footer_container .footer_nav .nav_left .footer_about_col h3,
+        footer .footer_container .footer_nav .nav_left .footer_help_col h3 {
+          font-size: 25px;
+          font-weight: 100;
+          margin-bottom: 5px !important; }
+        footer .footer_container .footer_nav .nav_left .footer_service_col ul,
+        footer .footer_container .footer_nav .nav_left .footer_about_col ul,
+        footer .footer_container .footer_nav .nav_left .footer_help_col ul {
+          margin: 0;
+          padding: 0; }
+          footer .footer_container .footer_nav .nav_left .footer_service_col ul li,
+          footer .footer_container .footer_nav .nav_left .footer_about_col ul li,
+          footer .footer_container .footer_nav .nav_left .footer_help_col ul li {
+            display: block;
+            list-style: none;
+            padding: 6px 0; }
+      footer .footer_container .footer_nav .nav_right {
+        display: grid;
+        place-items: center; }
+        footer .footer_container .footer_nav .nav_right .nav_right_wrap .appStores {
+          margin-bottom: 10px; }
+        footer .footer_container .footer_nav .nav_right .nav_right_wrap .download_text {
+          margin: 0;
+          font-family: monospace;
+          font-size: 15px; }
+    footer .footer_container .footer_bottom {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between; }
+      footer .footer_container .footer_bottom .bottom_left span {
+        padding-right: 30px; }
+      footer .footer_container .footer_bottom .bottom_right span:first-child {
+        text-transform: uppercase;
+        font-weight: 600; }
+      footer .footer_container .footer_bottom .bottom_right span {
+        font-size: 20px;
+        padding-left: 30px; }
+=======
 .carousel-control-next-icon, .carousel-control-prev-icon {
   width: 5rem !important;
   height: 5rem !important; }
@@ -310,9 +411,20 @@
   text-align: left; }
 
 
+
 * {
   margin: 0;
   padding: 0; }
+
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+body {
+  font-family: Roboto;
+  box-sizing: border-box; }
+
 // navigation
 @font-face {
   font-family: Regular;
@@ -465,6 +577,7 @@ body {
               body .header .header-wrapper .botom-header .botom-header-wrapper .shopping_option ul li a {
                 text-decoration: none;
                 color: #333; }
+
 
 
 
