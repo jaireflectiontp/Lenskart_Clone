@@ -1,115 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/b826549c01.js"
-      crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <title>Lenskart Clone</title>
-  </head>
 
-  <body>
-    <nav class="nav">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/b826549c01.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Lenskart Clone</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div>
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="nav-list topnav" id="myTopnav">
+      <ul class="nav-list_left">
+        <li class="nav-item_left">
+          <a href="javascript:void(0);" onclick="showFunction()">EYEGLASSES</a>
+        </li>
+        <li class="nav-item_left"><a href="#">COMPUTER GLASSES</a></li>
+        <li class="nav-item_left"><a href="#">KIDS GLASSES</a></li>
+        <li class="nav-item_left"><a href="#">CONTACT LENSES</a></li>
+        <li class="nav-item_left"><a href="#">SUNGLASSES</a></li>
+        <li class="nav-item_left"><a href="#">HOME EYE-TEST</a></li>
+        <li class="nav-item_left"><a href="#">STORE LOCATOR</a></li>
+      </ul>
+      <ul class="nav-list_right">
+        <li class="nav-item_right">
+          <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt="img"
+              width="76px" /></a>
+        </li>
+        <li class="nav-item_right">
+          <a href="#">
+            <img src="	https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt="img"
+              width="76px" /></a>
+        </li>
+        <li class="nav-item_right">
+          <a href="#">
+            <img src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg" alt="img" width="76px"
+              height="35px" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-banner">
+    <img
+      src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
+      alt="banner" />
+  </div>
+  <div class="nav-hover" id="show">
+    <div class="nav-hover_flex">
+      <img src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png" alt="img" width="700px" height="425px" />
       <div>
-        <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <div class="nav-list topnav" id="myTopnav">
-        <ul class="nav-list_left">
-          <li class="nav-item_left">
-            <a href="javascript:void(0);" onclick="showFunction()"
-              >EYEGLASSES</a
-            >
-          </li>
-          <li class="nav-item_left"><a href="#">COMPUTER GLASSES</a></li>
-          <li class="nav-item_left"><a href="#">KIDS GLASSES</a></li>
-          <li class="nav-item_left"><a href="#">CONTACT LENSES</a></li>
-          <li class="nav-item_left"><a href="#">SUNGLASSES</a></li>
-          <li class="nav-item_left"><a href="#">HOME EYE-TEST</a></li>
-          <li class="nav-item_left"><a href="#">STORE LOCATOR</a></li>
-        </ul>
-        <ul class="nav-list_right">
-          <li class="nav-item_right">
-            <a href="#"
-              ><img
-                src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
-                alt="img"
-                width="76px"
-            /></a>
-          </li>
-          <li class="nav-item_right">
-            <a href="#">
-              <img
-                src="	https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
-                alt="img"
-                width="76px"
-            /></a>
-          </li>
-          <li class="nav-item_right">
-            <a href="#">
-              <img
-                src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg"
-                alt="img"
-                width="76px"
-                height="35px" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="nav-banner">
-      <img
-        src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
-        width="100%"
-        alt="banner" />
-    </div>
-    <div class="nav-hover" id="show">
-      <div class="nav-hover_flex">
-        <img
-          src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
-          alt="img"
-          width="700px"
-          height="425px" />
-        <div>
-          <h2>Get your eyes checked at home</h2>
-          <p>
-            A certified refractionist will vist you with <br />latest eye
-            testing machine & 100 trial frames.
-          </p>
-          <button class="nav-hover_flex-btn">Book appointment</button>
-        </div>
+        <h2>Get your eyes checked at home</h2>
+        <p>
+          A certified refractionist will vist you with <br />latest eye
+          testing machine & 100 trial frames.
+        </p>
+        <button class="nav-hover_flex-btn">Book appointment</button>
       </div>
     </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-      function showFunction() {
-        var element = document.getElementById("show");
-        if (element.style.display === "block") {
-          element.style.display = "none";
-        } else {
-          element.style.display = "block";
-        }
+    }
+    function showFunction() {
+      var element = document.getElementById("show");
+      if (element.style.display === "block") {
+        element.style.display = "none";
+      } else {
+        element.style.display = "block";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
