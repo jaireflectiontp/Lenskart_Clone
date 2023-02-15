@@ -1,0 +1,67 @@
+@import "../mixin";
+@import "../variable";
+
+.faq_container {
+
+    font-family: system-ui;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+
+    .faq_que {
+        font-size: 35px;
+        font-weight: 100;
+        font-family: system-ui;
+        margin: 20px 0;
+    }
+
+    .faq_list {
+        font-size: 19px;
+        font-family: system-ui;
+        margin: 5px 0;
+
+        a {
+            color: $faq_text;
+        }
+    }
+
+    .que_board {
+        color: $faq_text;
+        margin: 30px 0;
+
+        h5 {
+            font-size: 25px;
+            font-weight: 500;
+            margin: 15px 0;
+        }
+
+        .info_handle {
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 17px;
+            font-weight: 600;
+            background-color: $handleBg;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .helpLine_section {
+        width: 100%;
+
+        .need_more_help {
+            background-color: $handleBg;
+            padding: 15px;
+
+            .helpLine_list {
+                .helpLine_link {
+                    list-style: none;
+
+                    a {
+                        color: $helpLine;
+                    }
+                }
+            }
+        }
+    }
+}
