@@ -1,3 +1,4 @@
+
 @import "./SCSS/footer";
 
 *{
@@ -12,3 +13,13 @@ body{
     font-family: Roboto;
     box-sizing: border-box;
 }
+
+@import "./SCSS/main/banner_slider_section.scss";
+
+@import'./SCSS/credentialform';
+@import'./SCSS/productNav';
+
+@import "./SCSS/Navbar";
+
+@import './SCSS/header';
+
