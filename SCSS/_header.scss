@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@import './mixin';
+@import './variable';
+
+body {
+    @include mar_pad;
+    color: black;
+    overflow: hidden;
+
+    .header {
+        width: $header_width;      
+
+        .header-wrapper {           
+            max-width: 1500px;
+            margin: auto;
+            padding: 0 20px;
+
+            .top-header {
+                @include header_flex;
+                align-items: center;
+
+                a {
+                    padding: 0 10px;
+                    text-decoration: none;
+                    font-size: 10.4px;
+                    font-family: Roboto-Regular;
+                    color: $black_color;
+                }
+
+                ul {
+                    padding: 0;
+                    margin: 6px;
+                    font-size: 1.2rem;
+                    display: flex;
+
+                    li:nth-child(13) {
+                        border: none;
+                    }
+
+                    li {
+                        list-style: none;
+                        border-right: 1px solid $border_color;
+
+                        a {
+                            padding: 0 10px;
+                            text-decoration: none;
+                            font-size: 10.4px;
+                            font-family: Roboto-Regular;
+                            color: $black_color;
+                        }
+                    }
+                }
+            }
+
+            //-------------------------bottom_header-----------------------------------------------------
+            .botom-header {
+                .botom-header-wrapper {
+                    @include header_flex;
+                    width: $header_width;
+                    align-items: center;
+                    justify-items: center;
+
+                    .logo {
+                        @include header_flex;
+                        align-items: center;
+                        width: 27%;
+
+                        .logo_contact {
+                            width: 125px;
+                        }
+                    }
+
+                    .search_bar {
+                        width: 45%;
+                        text-align: center;
+
+                        .search-bar-input {
+                            font-size: 17px;
+                            padding: 6px;
+                            width: 37.2rem;
+                            border-radius: 5px;
+                            height: 25px;
+                        }
+                    }
+
+                    .shopping_option {
+                        width: 28%;
+
+                        ul {
+                            @include header_flex;
+
+                            li {
+                                list-style: none;
+                                padding: 0 11px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $black_color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
