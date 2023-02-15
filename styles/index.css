@@ -1,3 +1,13 @@
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 5rem !important;
+  height: 5rem !important; }
+
+
+.carousel-control-prev {
+  left: -4% !important; }
+
+.carousel-control-next {
+  right: -4% !important; }
 
 .login-parent {
   position: relative; }
@@ -455,5 +465,6 @@ body {
               body .header .header-wrapper .botom-header .botom-header-wrapper .shopping_option ul li a {
                 text-decoration: none;
                 color: #333; }
+
 
 
