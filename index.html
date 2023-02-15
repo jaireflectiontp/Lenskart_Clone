@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +16,139 @@
         crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles/index.css">
     <title>Lenskart Clone</title>
+      <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    function showFunction() {
+      var element = document.getElementById("show");
+      if (element.style.display === "block") {
+        element.style.display = "none";
+      } else {
+        element.style.display = "block";
+      }
+    }
+  </script>
 </head>
 
+
+
+
 <body>
-  
+    <header>
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="top-header">
+                    <ul>
+                        <li><a href="/">D0 More,Be More</a></li>
+                        <li><a href="/">Try in 3D</a></li>
+                        <li><a href="/">Store Locator</a></li>
+                        <li><a href="/">Quality</a></li>
+                        <li><a href="/">USA</a></li>
+                        <li><a href="/">Singapore</a></li>
+                        <li><a href="/">UAE</a></li>
+                        <li><a href="/">John Jacobs</a></li>
+                        <li><a href="/">Aqualens</a></li>
+                        <li><a href="/">Cobrowsing</a></li>
+                        <li><a href="/">Engineering Blog</a></li>
+                        <li><a href="/">Lenskart Franchise</a></li>
+                        <li><a href="/">Lenskart Optom Partner Program</a></li>
+                    </ul>
+                    <span><a href="/">Contact Us</a></span>
+                </div>
+                <div class="botom-header">
+                    <div class="botom-header-wrapper">
+                        <div class="logo">
+                            <img src="images/main_logo.svg" alt="">
+                            <img class="logo_contact" src="images/phone_number.svg" alt="">
+                        </div>
+
+                        <div class="search_bar">
+                            <input class="search-bar-input" type="text" placeholder="What are you looking for">
+                        </div>
+
+                        <div class="shopping_option">
+                            <ul>
+                                <li><a href="/">Track Order</a></li>
+                                <li><a href="/">Amit</a> <i class="fa fa-caret-down"></i></li>
+                                <li><i class='far fa-heart'></i> <a href="/">Wishlist</a></li>
+                                <li><i class='fas fa-cart-plus'></i> <a href="/">Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav">
+    <div>
+      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="nav-list topnav" id="myTopnav">
+      <ul class="nav-list_left">
+        <li class="nav-item_left">
+          <a href="javascript:void(0);" onclick="showFunction()">EYEGLASSES</a>
+        </li>
+        <li class="nav-item_left"><a href="#">COMPUTER GLASSES</a></li>
+        <li class="nav-item_left"><a href="#">KIDS GLASSES</a></li>
+        <li class="nav-item_left"><a href="#">CONTACT LENSES</a></li>
+        <li class="nav-item_left"><a href="#">SUNGLASSES</a></li>
+        <li class="nav-item_left"><a href="#">HOME EYE-TEST</a></li>
+        <li class="nav-item_left"><a href="#">STORE LOCATOR</a></li>
+      </ul>
+      <ul class="nav-list_right">
+        <li class="nav-item_right">
+          <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt="img"
+              width="76px" /></a>
+        </li>
+        <li class="nav-item_right">
+          <a href="#">
+            <img src="	https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt="img"
+              width="76px" /></a>
+        </li>
+        <li class="nav-item_right">
+          <a href="#">
+            <img src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg" alt="img" width="76px"
+              height="35px" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="nav-banner">
+    <img
+      src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
+      alt="banner" />
+  </div>
+  <div class="nav-hover" id="show">
+    <div class="nav-hover_flex">
+      <img src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png" alt="img" width="700px" height="425px" />
+      <div>
+        <h2>Get your eyes checked at home</h2>
+        <p>
+          A certified refractionist will vist you with <br />latest eye
+          testing machine & 100 trial frames.
+        </p>
+        <button class="nav-hover_flex-btn">Book appointment</button>
+      </div>
+    </div>
+  </div>
+    <main>
+        Main
+    </main>
+    <footer>
+        Footer
+    </footer>
+
+
 </body>
 
 </html>

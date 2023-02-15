@@ -1,0 +1,8 @@
+@mixin header_flex{
+display: flex;
+justify-content: space-between;
+}
+@mixin mar_pad{
+    margin: 0;
+    padding: 0;
+}
