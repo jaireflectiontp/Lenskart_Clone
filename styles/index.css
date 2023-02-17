@@ -1,3 +1,52 @@
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto-Regular; }
+
+.buyheading {
+  font-family: 'FuturaStd-Medium';
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  margin: 40px auto; }
+
+h4:before,
+h4:after {
+  content: '';
+  flex: 1 1;
+  border-bottom: 1px solid #cfcdcd;
+  margin: auto 0px; }
+
+h4 {
+  font-family: Roboto-Regular;
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  color: black; }
+
+.buySection {
+  width: 100%; }
+  .buySection .buySection-wrapper {
+    width: 1425px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    text-align: center;
+    margin: 0 auto; }
+    .buySection .buySection-wrapper .buy_left_side {
+      width: 46%;
+      padding-right: 7.5px; }
+    .buySection .buySection-wrapper .buy_right_side {
+      width: 46%;
+      padding-left: 7.5px; }
+    .buySection .buySection-wrapper .buy_img {
+      max-width: 705px; }
+    .buySection .buySection-wrapper .buy_pad_btm {
+      margin-bottom: 15px; }
+
 .footer_link {
   text-decoration: none;
   color: #fcfcfc; }
@@ -572,3 +621,4 @@ body {
               body .header .header-wrapper .botom-header .botom-header-wrapper .shopping_option ul li a {
                 text-decoration: none;
                 color: #333; }
+
