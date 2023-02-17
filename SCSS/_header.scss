@@ -9,7 +9,6 @@
 body {
     @include mar_pad;
     color: black;
-    overflow: hidden;
 
     .header {
         width: $header_width;      
