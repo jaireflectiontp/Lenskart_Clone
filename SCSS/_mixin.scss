@@ -1,3 +1,6 @@
+
+@mixin mar_pad{
+
 @mixin max_width {
     max-width: 1400px;
     width: 100%;
@@ -11,6 +14,7 @@
 }
 
 @mixin mar_pad {
+
     margin: 0;
     padding: 0;
 }
