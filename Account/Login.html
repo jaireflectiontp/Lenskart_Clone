@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenscart.com Login</title>
+    <script src="https://kit.fontawesome.com/b826549c01.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+    <section>
+        <div class="login-parent">
+            <div class="login-inner-parent">
+                <div class="fade-login-modal"></div>
+                <div class="login-modal-content">
+                    <div class="login-inner-content">
+                        <div class="login-close-icon">X</div>
+                        <div class="login-animate-left">
+                            <div><img
+                                    src="https://static1.lenskart.com/media/desktop/img/DesignStudioIcons/DesktopLoginImage.svg"
+                                    alt="img" width="100%">
+                            </div>
+                            <div class="login-details-modal">
+                                <div class="login-heading">Sign In</div>
+                                <div>
+                                    <input id="getlogininfo" type="text" class="login-input-container"
+                                        autocomplete="email mobile" placeholder="Mobile/Email">
+                                </div>
+                                <div class="login-error-msg" id="logininfoError"></div>
+                                <div class="login-whatsapp-box">
+                                    <div class="checkbox-login-whatsapp"><input type="checkbox"></div>
+                                    <span class="login-whatsapp-text">Get updates on whatsapp</span>
+                                    <div class="whatsapp-logo-login"><img
+                                            src="https://static.lenskart.com/media/desktop/img/25-July-19/whatsapp.png"
+                                            alt="whatsapplogo" width="100%">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button  onclick="Login()" class="login-button"><a class="login-signin-link">Sign In</a></button>
+                                </div>
+                                <div class="login-signup-shortcut">
+                                    <div>New Member?</div>
+                                    <div><a href="./Signup.html" class="login-signup-click">Create an account</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./login.js"></script>
+    </section>
+</body>
+
+</html>
