@@ -1,4 +1,31 @@
 
+.customer_review_section {
+  background-color: #FFF092;
+  font-family: sans-serif;
+  padding: 60px 0; }
+  .customer_review_section .section_heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: initial;
+    text-transform: uppercase;
+    margin: 0 0 40px 0; }
+  .customer_review_section .review_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 90px; }
+    .customer_review_section .review_container .review_clips {
+      width: 32%; }
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.ttf); }
+
+body {
+  font-family: Roboto; }
+
+
 @font-face {
   font-family: Roboto-Regular;
   src: url(../fonts/Roboto-Regular.ttf); }
@@ -621,4 +648,3 @@ body {
               body .header .header-wrapper .botom-header .botom-header-wrapper .shopping_option ul li a {
                 text-decoration: none;
                 color: #333; }
-

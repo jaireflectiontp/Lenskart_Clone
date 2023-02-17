@@ -1,3 +1,6 @@
+
+@import "./SCSS/main/customer_review_section.scss";
+
 @import './SCSS/buy_it_your_way'
 @import "./SCSS/footer";
 
@@ -23,3 +26,11 @@ body{
 
 @import './SCSS/header';
 
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: Roboto;
+}
