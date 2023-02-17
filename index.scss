@@ -1,2 +1,39 @@
 
 @import './SCSS/findThePerfectFitSection'
+
+@import "./SCSS/main/customer_review_section.scss";
+
+@import './SCSS/buy_it_your_way'
+@import "./SCSS/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+@import "./SCSS/main/banner_slider_section.scss";
+
+@import'./SCSS/credentialform';
+@import'./SCSS/productNav';
+
+@import "./SCSS/Navbar";
+
+@import './SCSS/header';
+
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: Roboto;
+}
+
