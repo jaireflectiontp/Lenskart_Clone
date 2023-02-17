@@ -82,7 +82,7 @@ body {
                             padding: 6px;
                             width: 37.2rem;
                             border-radius: 5px;
-                            height: 25px;
+                            height: 30px;
                         }
                     }
 
@@ -91,6 +91,8 @@ body {
 
                         ul {
                             @include header_flex;
+                            padding: 0;
+                            margin: 0;
 
                             li {
                                 list-style: none;
