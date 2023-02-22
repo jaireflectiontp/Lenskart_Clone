@@ -15,12 +15,13 @@
 .nav-list,
 .nav-hover_flex {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
   overflow: hidden;
-  padding: 14px 20px;
+  padding: 22px 20px 5px 1px;
   font-family: "Regular";
 }
 
@@ -32,6 +33,7 @@
 
 .nav-item_left {
   padding: 0 15px;
+  font-size: 16px;
 }
 
 .nav-item_left a {
