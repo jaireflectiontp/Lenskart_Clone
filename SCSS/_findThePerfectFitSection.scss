@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@import './mixin';
+@import './variable';
+body {
+    @include mar_pad;
+    font-family:Roboto-Regular, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333;
+}
+
+h4:before,
+h4:after {
+    content: '';
+    flex: 1 1;
+    border-bottom: 1px solid #cfcdcd;
+    margin: auto 15px;
+}
+
+h4 {
+    display:$Fit_flex;
+    flex-direction: row;
+    width: 94%;
+    color: black;
+}
+
+.fit_heading {
+    font-family:Roboto-Regular, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+
+.fit_mar_top {
+    margin-top: 80px;
+    margin-left: 46px;
+}
+
+.fitSection {
+    width: 100%;
+    margin-top: 35px;
+
+    .fitSection-wrapper {
+        margin: 0 auto;
+        width: 80%;
+        display: $Fit_flex;
+        justify-content: center;
+
+        .left_side {
+            padding-right: 15px;
+
+            .left-img {
+                max-width: 615px;
+            }
+        }
+
+        .right_side {
+            @include mar_pad;
+
+            .right-img {
+                max-width: 612px;
+            }
+        }
+
+        .marbtn {
+            margin-bottom: 14px;
+        }
+    }
+}

@@ -1,15 +1,20 @@
 
+@mixin mar_pad{
+}
 @mixin max_width {
     max-width: 1400px;
     width: 100%;
     margin: 25px auto;
     overflow: hidden;
-
-@mixin header_flex{
-display: flex;
-justify-content: space-between;
 }
-@mixin mar_pad{
+
+@mixin header_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin mar_pad {
+
     margin: 0;
     padding: 0;
 }
