@@ -1,761 +1,931 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b826549c01.js"
+      crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/b826549c01.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    <title>Lenskart Clone</title>
+  </head>
 
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="style.css">
+  <body>
+    <header>
+      <div class="header">
+        <div class="header-wrapper">
+          <div class="top-header">
+            <ul>
+              <li><a href="/">D0 More,Be More</a></li>
+              <li><a href="/">Try in 3D</a></li>
+              <li><a href="/">Store Locator</a></li>
+              <li><a href="/">Quality</a></li>
+              <li><a href="/">USA</a></li>
+              <li><a href="/">Singapore</a></li>
+              <li><a href="/">UAE</a></li>
+              <li><a href="/">John Jacobs</a></li>
+              <li><a href="/">Aqualens</a></li>
+              <li><a href="/">Cobrowsing</a></li>
+              <li><a href="/">Engineering Blog</a></li>
+              <li><a href="/">Lenskart Franchise</a></li>
+              <li><a href="/">Lenskart Optom Partner Program</a></li>
+            </ul>
+            <span><a href="/">Contact Us</a></span>
+          </div>
+          <div class="botom-header">
+            <div class="botom-header-wrapper">
+              <div class="logo">
+                <img src="images/main_logo.svg" alt="" />
+                <img
+                  class="logo_contact"
+                  src="images/phone_number.svg"
+                  alt="" />
+              </div>
 
+              <div class="search_bar">
+                <input
+                  class="search-bar-input"
+                  type="text"
+                  placeholder="What are you looking for" />
+              </div>
 
-  <title>Lenskart Clone</title>
-</head>
-
-<body>
-  <header>
-    <div class="header">
-      <div class="header-wrapper">
-        <div class="top-header">
-          <ul>
-            <li><a href="/">D0 More,Be More</a></li>
-            <li><a href="/">Try in 3D</a></li>
-            <li><a href="/">Store Locator</a></li>
-            <li><a href="/">Quality</a></li>
-            <li><a href="/">USA</a></li>
-            <li><a href="/">Singapore</a></li>
-            <li><a href="/">UAE</a></li>
-            <li><a href="/">John Jacobs</a></li>
-            <li><a href="/">Aqualens</a></li>
-            <li><a href="/">Cobrowsing</a></li>
-            <li><a href="/">Engineering Blog</a></li>
-            <li><a href="/">Lenskart Franchise</a></li>
-            <li><a href="/">Lenskart Optom Partner Program</a></li>
-          </ul>
-          <span><a href="/">Contact Us</a></span>
+              <div class="shopping_option">
+                <ul>
+                  <li><a href="/">Track Order</a></li>
+                  <li><a href="Account/Login.html">Sign In & Sign Up</a></li>
+                  <li><i class="far fa-heart"></i> <a href="/">Wishlist</a></li>
+                  <li><i class="fas fa-cart-plus"></i> <a href="/">Cart</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="botom-header">
-          <div class="botom-header-wrapper">
-            <div class="logo">
-              <img src="images/main_logo.svg" alt="">
-              <img class="logo_contact" src="images/phone_number.svg" alt="">
-            </div>
+      </div>
+    </header>
 
-            <div class="search_bar">
-              <input class="search-bar-input" type="text" placeholder="What are you looking for">
-            </div>
+    <nav class="nav">
+      <div>
+        <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="nav-list topnav" id="myTopnav">
+        <ul class="nav-list_left">
+          <li class="nav-item_left">
+            <a href="javascript:void(0);" onclick="showFunction()"
+              >EYEGLASSES</a
+            >
+          </li>
+          <li class="nav-item_left"><a href="#">COMPUTER GLASSES</a></li>
+          <li class="nav-item_left"><a href="#">KIDS GLASSES</a></li>
+          <li class="nav-item_left"><a href="#">CONTACT LENSES</a></li>
+          <li class="nav-item_left"><a href="#">SUNGLASSES</a></li>
+          <li class="nav-item_left"><a href="#">HOME EYE-TEST</a></li>
+          <li class="nav-item_left"><a href="#">STORE LOCATOR</a></li>
+        </ul>
+        <ul class="nav-list_right">
+          <li class="nav-item_right">
+            <a href="#"
+              ><img
+                src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png"
+                alt="img"
+                width="76px"
+            /></a>
+          </li>
+          <li class="nav-item_right">
+            <a href="#">
+              <img
+                src="	https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png"
+                alt="img"
+                width="76px"
+            /></a>
+          </li>
+          <li class="nav-item_right">
+            <a href="#">
+              <img
+                src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg"
+                alt="img"
+                width="76px"
+                height="35px" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            <div class="shopping_option">
+    <div class="nav-hover" id="show">
+      <div class="nav-hover_flex">
+        <img
+          src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png"
+          alt="img"
+          width="700px"
+          height="425px" />
+        <div>
+          <h2>Get your eyes checked at home</h2>
+          <p>
+            A certified refractionist will vist you with <br />latest eye
+            testing machine & 100 trial frames.
+          </p>
+          <button class="nav-hover_flex-btn">Book appointment</button>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <div class="product-nav-parent">
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" />
+                <div class="product-nav-title">Eyeglasses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" />
+                <div class="product-nav-title">Eyeglasses</div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Air-Light-Weight</div>
+                    <div>Powered Lenses</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$1999</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Primium lenses</div>
+                    <div>John Jaccobs</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$3200</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Kids Glasses</div>
+                    <div>Powered Lenses</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$999</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Lens Cleaner</div>
+                    <div></div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$110</div>
+                  </div>
+                </div>
+              </a>
+              <a class="Viewall-nav-item">
+                <div class="Viewall-text-navitem">View All</div>
+              </a>
+            </div>
+          </div>
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" />
+                <div class="product-nav-title">Sunglasses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" />
+                <div class="product-nav-title">Sunglasses</div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Vincent Chase</div>
+                    <div>Wuth Gold Membership</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$1299</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Primium Range</div>
+                    <div>John Jaccobs,Ray-Ban</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$3200</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Power Sunglasses</div>
+                    <div>UV-400 | Clear Vision</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$2599</div>
+                  </div>
+                </div>
+              </a>
+              <a class="Viewall-nav-item">
+                <div class="Viewall-text-navitem">View All</div>
+              </a>
+            </div>
+          </div>
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" />
+                <div class="product-nav-title">Computer Glasses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="	https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" />
+                <div class="product-nav-title">Computer Glasses</div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Blu 0 Computer Glasses</div>
+                    <div>Blu Zero Power</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$1499</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Primium range</div>
+                    <div>Blu Zero Power</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$3200</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Kids Range</div>
+                    <div>Blu Zero power</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$1299</div>
+                  </div>
+                </div>
+              </a>
+              <a class="Viewall-nav-item">
+                <div class="Viewall-text-navitem">View All</div>
+              </a>
+            </div>
+          </div>
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="	https://static1.lenskart.com/media/desktop/img/Apr22/d.png" />
+                <div class="product-nav-title">Contact Lenses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png" />
+                <div class="product-nav-title">Contact Lenses</div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Clear With Power</div>
+                    <div></div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$99</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Color With Power</div>
+                    <div></div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$299</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Color Without Power</div>
+                    <div></div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$120</div>
+                  </div>
+                </div>
+              </a>
+              <a class="product-navlink">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Lens Solutuion</div>
+                    <div>Powered Lenses</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$123</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" />
+                <div class="product-nav-title">Power Sunglasses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" />
+                <div class="product-nav-title">Power Sunglasses</div>
+              </a>
+              <a class="product-navlink" href="">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Power Sunglasses</div>
+                    <div>Buy 1 Get 1 + 200 Off</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$2599</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="product-nav-item">
+            <div class="product-nav-drop">
+              <div>
+                <img
+                  class="product-nav-img"
+                  width="100%"
+                  src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" />
+                <div class="product-nav-title">Progressive Lenses</div>
+              </div>
+            </div>
+            <div class="product-nav-dropdown">
+              <a class="product-nav-link" href="">
+                <img
+                  class="product-nav-img top-image-drop"
+                  width="90%"
+                  alt="img"
+                  src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" />
+                <div class="product-nav-title">Progressive Lenses</div>
+              </a>
+              <a class="product-navlink" href="">
+                <div class="nav-pro-menudrop">
+                  <div class="nav-pro-menudrop-item">
+                    <div>Progressives</div>
+                    <div>Not Expensive</div>
+                  </div>
+                  <div class="nav-pro-menudrop-item1">
+                    <div>Starting</div>
+                    <div>$4200</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <marquee behavior="" direction="right" scrollamount="15">
+        <div class="nav-banner">
+          <img
+            src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
+            alt="banner"
+            width="100%" />
+        </div>
+      </marquee>
+      <section class="banner_slider_section">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/marble/web.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Feb23/Launch%20banner.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Nov22/mens-edit/desktop.jpg"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Nov22/tinted/launch-desk.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Nov22/LK-Airflex-desktop-banner.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Dec22/blend-edit/web.jpg"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Dec22/new-collection/desktop.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/home/Web.jpg"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/wedding%20edit/web-home.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Jan23/23jan/hooper/hooper-web.jpg"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="carousel-item">
+              <a href="">
+                <img
+                  src="https://static1.lenskart.com/media/desktop/img/Nov22/trans1.gif"
+                  class="d-block w-100"
+                  alt="..."
+              /></a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h4 class="fit_heading fit_mar_top">FIND THE PERFECT FIT</h4>
+
+        <div class="fitSection">
+          <div class="fitSection-wrapper">
+            <div class="left_side">
+              <a href="/"
+                ><img
+                  class="left-img marbtn"
+                  src="images/eye-square10.webp"
+                  alt=""
+              /></a>
+              <a href="/"
+                ><img
+                  class="left-img"
+                  src="images/power-sun-square.webp"
+                  alt=""
+              /></a>
+            </div>
+            <div class="right_side">
+              <a href="/">
+                <img
+                  class="right-img marbtn"
+                  src="images/ce-square.webp"
+                  alt=""
+              /></a>
+              <a href="/"
+                ><img
+                  class="right-img marbtn"
+                  src="images/sun-square.webp"
+                  alt=""
+              /></a>
+              <a href="/"
+                ><img
+                  class="right-img"
+                  src="images/Banner03_TileDesktop.webp"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h4 class="buyheading">BUY IT YOUR WAY</h4>
+        <div class="buySection">
+          <div class="buySection-wrapper">
+            <div class="buy_left_side">
+              <img
+                class="buy_img buy_pad_btm"
+                src="images/call1800.webp"
+                alt="" />
+              <img class="buy_img" src="images/hto.webp" alt="" />
+            </div>
+            <div class="buy_right_side">
+              <img
+                class="buy_img buy_pad_btm"
+                src="images/whatsapp.webp"
+                alt="" />
+              <img class="buy_img" src="images/stores.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customer_review_section">
+        <h3 class="section_heading">meet our happy customers</h3>
+        <div class="review_container">
+          <div class="review_clips">
+            <iframe
+              width="100%"
+              height="278"
+              src="https://www.youtube.com/embed/HYPqf_eVvvM"
+              title="Customer Reviews"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="review_clips">
+            <iframe
+              width="100%"
+              height="278"
+              src="https://www.youtube.com/embed/SQm3RxXRunw"
+              title="Lenskart Customer Testimonial"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="review_clips">
+            <iframe
+              width="100%"
+              height="278"
+              src="https://www.youtube.com/embed/IZpUQ-S_LcM"
+              title="Lenskart - The Customer Diaries - Anurag"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_container">
+        <h2 class="footer_heading">Buy The Best Eyewear From Lenskart</h2>
+        <p>
+          Lenskart Is The Leading E-Commerce Portal For Eyewear In India. It Has
+          Revolutionised The Eyewear Industry In The Country With Its
+          Omni-Channel Approach. From An Ever-Growing Number Of Offline Stores
+          Across Major Cities In The Country To Innovative Integration Of
+          Technology While Purchasing Online, Lenskart Caters To Every Customer
+          With Several Deals And Offers.
+        </p>
+        <p>
+          A One-Stop Online Solution For Purchasing Eyewear And Its Accessories,
+          Lenskart Delivers Them Right At Your Doorstep With Convenient Methods
+          Of Payment. <a class="footer_link" href="#">Sunglasses</a> As Well As
+          <a class="footer_link" href="#">Eyeglasses</a> Are Available For Men
+          And Women In A Diverse Array Of Styles And Trendy Colours. If You Want
+          To Try Out Contact Lenses, Pick The Ones Of Your Choice From The
+          Extensive Variety Of Coloured
+          <a class="footer_link" href="#">Contact Lenses</a> From Our Online
+          Store.
+        </p>
+
+        <div class="footer_product_accordion">
+          <div class="product_acc">
+            <button class="showDetail">SUNGLASSES</button>
+
+            <div class="info_panel">
+              <div>
+                Sunglasses help protect the eyes from the damaging UV rays of
+                the sun and, today, they have become an essential fashion
+                accessory too. The classic styles of shades never go out of
+                fashion as they are reiterated with each passing trend to suit
+                one’s contemporary style sensibility. With different
+                combinations of frame and lens colours, sunglasses appeal to all
+                ages irrespective of gender. Luxury eyewear brands such as Linda
+                Farrow and Tom Ford, among others have an excellent collection
+                of aviator-shaped and cat-eye goggles that go an extra mile to
+                create style and provide luxury. Vogue, Tommy Hilfiger, French
+                Connection, Ray-Ban, John Jacobs and Vincent Chase, on the other
+                hand, have plenty of sunglasses for women as well in various
+                elegant colours and chic styles.
+              </div>
+              Ray-Ban Goggles Are Popular For Their Timeless Frame Designs Such
+              As The Aviator-Shaped,
+              <a class="footer_link" href="#">Wayfarer-Shaped</a> And Browline
+              Styles. These Shades Are Available In Plenty Of Colours On The
+              Frames And Lenses That Would Go With Any Modern Outfit
+              Effortlessly. Brands Such As Carrera And Calvin Klein, Among
+              Several Others Have Excellent Variations Of The Classic
+              Aviator-Shaped And Wayfarer-Shaped Goggles With Sporty And Suave
+              Lens Colours. <a class="footer_link" href="#">Sunglasses</a>
+              For Men Are Available From The Best Brands Such As Hugo Boss,
+              Oakley And John Jacobs, Among Others, And Are Ideal For Various
+              Occasions.
+              <div class="brand_products">
+                <b>Popular Sunglasses Brands</b>-
+                <a class="footer_link" href="#">Ray Ban Sunglasses</a>,
+                <a class="footer_link" href="#">Oakley Sunglasses</a>,
+                <a class="footer_link" href="#">Carrera Sunglasses</a>,
+                <a class="footer_link" href="#">IDEE Sunglasses</a>
+              </div>
+            </div>
+            <div class="bottom_border"></div>
+          </div>
+          <div class="product_acc">
+            <button class="showDetail">EYEGLASSES</button>
+            <div class="info_panel">
+              <div>
+                Lenskart has a wide range of styles that are highly fashionable.
+                You can try out the full-rimmed and half-rimmed eyeglasses that
+                come with various frame and temple materials such as acetate,
+                stainless steel, TR-90, and metal, among others. Rimless
+                spectacles also come in various styles with sporty and elegant
+                temples.
+              </div>
+              Various Brands Such As Ray-Ban, Oakley, Carrera, John Jacobs, Lee
+              Cooper, And Oakley Have An Amazing Variety Of Frame And Temple
+              Styles. The Browline, Round, Rectangular, Square And
+              Wayfarer-Shaped Spectacles Are Some Of The Best Styles Of Men’s
+              Eyeglasses And They Come With Sophisticated As Well As Sporty
+              Frame And Temple Colours. Spectacles With Tortoise Shell Frames
+              Have A Vintage Appeal And You Can Easily Choose From The Various
+              Styles Available At Lenskart.
+
+              <div class="brand_products">
+                <b>Top Brand Eyeglasses</b>-
+                <a class="footer_link" href="#">Ray-Ban Eyeglasses</a>,
+                <a class="footer_link" href="#">Carrera Eyeglasses</a>,
+                <a class="footer_link" href="#">Oakley</a>,
+                <a class="footer_link" href="#">Men Eyeglasses</a>,
+                <a class="footer_link" href="#">Women Eyeglasses</a>,
+                <a class="footer_link" href="#">John Jacob Eyeglasses</a>
+              </div>
+              <div class="brand_products">
+                <b>Best Styles In Eyeglasses</b>-
+                <a class="footer_link" href="#">Full Rim Eyeglasses</a>,
+                <a class="footer_link" href="#">Half Rim Eyeglasses</a>,
+                <a class="footer_link" href="#">Rimless Eyeglasses</a>,
+                <a class="footer_link" href="#">Cat EyeEyeglasses</a>,
+                <a class="footer_link" href="#">Aviator Shapes Eyeglasses</a>,
+                <a class="footer_link" href="#">Wayfarer Shapes Eyeglasses</a>
+              </div>
+            </div>
+            <div class="bottom_border"></div>
+          </div>
+          <div class="product_acc">
+            <button class="showDetail">CONTACT LENSES</button>
+            <div class="info_panel">
+              <div>
+                Lenskart has various types of contact lenses. Brands such as
+                Aqualens, Bausch & Lomb, Johnson & Johnson, Acuvue, Alcon, and
+                Purevision, among others have yearly, monthly, 2-weekly, and
+                daily disposable contact lenses. Specially designed toric
+                contact lenses are also available from these brands.
+              </div>
+              <a class="footer_link" href="#">Coloured Contact Lenses </a> Are
+              Available With And Without Power, And Some Of Them Have UV
+              Protection As Well. The Unique Colours That You Could Try Are
+              Amethyst, Hazel, Green, Turquoise, Blue, Brown, And Grey, Which
+              Look Quite Stylish. Made From The Best Materials That Allow Ample
+              Oxygen Supply To The Eyes, These Contact Lenses Sit Perfectly On
+              The Eyes And Can Be Worn Anywhere.
+
+              <p>
+                Lenskart Also Offers A Wide Range Of Contact Lens Accessories.
+                To Clean Your Contacts, You Can Get The Best Contact Lens
+                Solutions From Our Online Store, Which Are Easy To Use And
+                Effective In Keeping Your Eyes Healthy.
+              </p>
+              <div class="brand_products">
+                <b>Popular Contact Lenses Brands</b>-
+                <a class="footer_link" href="#">Bausch & Lomb Contact Lenses</a
+                >,
+                <a class="footer_link" href="#">Ciba Vision Contact Lenses</a>,
+                <a class="footer_link" href="#"
+                  >Johnson & Johnson Contact Lenses</a
+                >
+              </div>
+              <div class="brand_products">
+                <b>Contact Lenses By Type</b>-
+                <a class="footer_link" href="#">Monthly Disposable</a>,
+                <a class="footer_link" href="#">Daily Disposable</a>,
+                <a class="footer_link" href="#">Toric Contact Lenses</a>
+              </div>
+              <div><a class="footer_link" href="#">Lenses Directory</a></div>
+            </div>
+            <div class="bottom_border"></div>
+          </div>
+        </div>
+
+        <div class="footer_nav">
+          <div class="nav_left">
+            <div class="footer_service_col">
+              <h3>Services</h3>
               <ul>
-                <li><a href="/">Track Order</a></li>
-                <li><a href="Account/Login.html">Sign In & Sign Up</a></li>
-                <li><i class='far fa-heart'></i> <a href="/">Wishlist</a></li>
-                <li><i class='fas fa-cart-plus'></i> <a href="/">Cart</a></li>
+                <li><a class="footer_link" href="#">Store Locator</a></li>
+                <li><a class="footer_link" href="#">Enter My Power</a></li>
+                <li><a class="footer_link" href="#">Buying Guide</a></li>
+                <li><a class="footer_link" href="#">Frame Size</a></li>
+              </ul>
+            </div>
+            <div class="footer_about_col">
+              <h3>About Us</h3>
+              <ul>
+                <li><a class="footer_link" href="#"> We Are Hiring</a></li>
+                <li><a class="footer_link" href="#">Refer & Earn</a></li>
+                <li><a class="footer_link" href="#">About Us</a></li>
+                <li><a class="footer_link" href="#">Lenskart Coupons</a></li>
+              </ul>
+            </div>
+            <div class="footer_help_col">
+              <h3>Help</h3>
+              <ul>
+                <li><a class="footer_link" href="#">FAQ's</a></li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </header>
+          <div class="nav_right">
+            <div class="nav_right_wrap">
+              <div class="appStores">
+                <span><img src="./img/play-store.svg" alt="play store" /></span>
+                <span><img src="./img/app-store.svg" alt="app store" /></span>
+              </div>
 
-  <nav class="nav">
-    <div>
-      <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="nav-list topnav" id="myTopnav">
-      <ul class="nav-list_left">
-        <li class="nav-item_left">
-          <a href="javascript:void(0);" onclick="showFunction()">EYEGLASSES</a>
-        </li>
-        <li class="nav-item_left"><a href="#">COMPUTER GLASSES</a></li>
-        <li class="nav-item_left"><a href="#">KIDS GLASSES</a></li>
-        <li class="nav-item_left"><a href="#">CONTACT LENSES</a></li>
-        <li class="nav-item_left"><a href="#">SUNGLASSES</a></li>
-        <li class="nav-item_left"><a href="#">HOME EYE-TEST</a></li>
-        <li class="nav-item_left"><a href="#">STORE LOCATOR</a></li>
-      </ul>
-      <ul class="nav-list_right">
-        <li class="nav-item_right">
-          <a href="#"><img src="https://static1.lenskart.com/media/desktop/img/May22/3dtryon1.png" alt="img"
-              width="76px" /></a>
-        </li>
-        <li class="nav-item_right">
-          <a href="#">
-            <img src="	https://static1.lenskart.com/media/desktop/img/Mar22/13-Mar/blulogo.png" alt="img"
-              width="76px" /></a>
-        </li>
-        <li class="nav-item_right">
-          <a href="#">
-            <img src="https://static.lenskart.com/media/desktop/img/Feb22/18-Feb/goldlogo.jpg" alt="img" width="76px"
-              height="35px" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-<<<<<<< HEAD
-  <div class="nav-banner">
-    <img
-      src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
-      alt="banner" width="100%" />
-  </div>
-=======
+              <p class="download_text">Download Lenskart App to buy</p>
+              <p class="download_text">
+                Eyeglasses, Sunglasses and Contact Lenses
+              </p>
+            </div>
+          </div>
+        </div>
 
->>>>>>> c81318138cae6f70b843e0530378b4a3127686f7
-  <div class="nav-hover" id="show">
-    <div class="nav-hover_flex">
-      <img src="https://static1.lenskart.com/media/desktop/img/HomeTryOut.png" alt="img" width="700px" height="425px" />
-      <div>
-        <h2>Get your eyes checked at home</h2>
-        <p>
-          A certified refractionist will vist you with <br />latest eye
-          testing machine & 100 trial frames.
-        </p>
-        <button class="nav-hover_flex-btn">Book appointment</button>
-      </div>
-    </div>
-  </div>
-  <main>
-
-    <section>
-      <div class="product-nav-parent">
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" />
-              <div class="product-nav-title">Eyeglasses</div>
-            </div>
+        <hr />
+        <div class="footer_bottom">
+          <div class="bottom_left">
+            <span><a class="footer_link" href="#">T & C</a></span>
+            <span><a class="footer_link" href="#">Privacy</a></span>
+            <span><a class="footer_link" href="#">Disclaimer</a></span>
           </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/a2.png" />
-              <div class="product-nav-title">Eyeglasses</div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Air-Light-Weight</div>
-                  <div>Powered Lenses</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$1999</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Primium lenses</div>
-                  <div>John Jaccobs</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$3200</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Kids Glasses</div>
-                  <div>Powered Lenses</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$999</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Lens Cleaner</div>
-                  <div></div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$110</div>
-                </div>
-              </div>
-            </a>
-            <a class="Viewall-nav-item">
-              <div class="Viewall-text-navitem">View All</div>
-            </a>
-          </div>
-        </div>
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" />
-              <div class="product-nav-title">Sunglasses</div>
-            </div>
-          </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/b2.png" />
-              <div class="product-nav-title">Sunglasses</div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Vincent Chase</div>
-                  <div>Wuth Gold Membership</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$1299</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Primium Range</div>
-                  <div>John Jaccobs,Ray-Ban</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$3200</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Power Sunglasses</div>
-                  <div>UV-400 | Clear Vision</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$2599</div>
-                </div>
-              </div>
-            </a>
-            <a class="Viewall-nav-item">
-              <div class="Viewall-text-navitem">View All</div>
-            </a>
-          </div>
-        </div>
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" />
-              <div class="product-nav-title">Computer Glasses</div>
-            </div>
-          </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="	https://static1.lenskart.com/media/desktop/img/Apr22/d2.png" />
-              <div class="product-nav-title">Computer Glasses</div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Blu 0 Computer Glasses</div>
-                  <div>Blu Zero Power</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$1499</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Primium range</div>
-                  <div>Blu Zero Power</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$3200</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Kids Range</div>
-                  <div>Blu Zero power</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$1299</div>
-                </div>
-              </div>
-            </a>
-            <a class="Viewall-nav-item">
-              <div class="Viewall-text-navitem">View All</div>
-            </a>
-          </div>
-        </div>
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="	https://static1.lenskart.com/media/desktop/img/Apr22/d.png" />
-              <div class="product-nav-title">Contact Lenses</div>
-            </div>
-          </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/d.png" />
-              <div class="product-nav-title">Contact Lenses</div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Clear With Power</div>
-                  <div></div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$99</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Color With Power</div>
-                  <div></div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$299</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Color Without Power</div>
-                  <div></div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$120</div>
-                </div>
-              </div>
-            </a>
-            <a class="product-navlink">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Lens Solutuion</div>
-                  <div>Powered Lenses</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$123</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" />
-              <div class="product-nav-title">Power Sunglasses</div>
-            </div>
-          </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="https://static1.lenskart.com/media/desktop/img/Apr22/e2.png" />
-              <div class="product-nav-title">Power Sunglasses</div>
-            </a>
-            <a class="product-navlink" href="">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Power Sunglasses</div>
-                  <div>Buy 1 Get 1 + 200 Off</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$2599</div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product-nav-item">
-          <div class="product-nav-drop">
-            <div>
-              <img class="product-nav-img" width="100%"
-                src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" />
-              <div class="product-nav-title">Progressive Lenses</div>
-            </div>
-          </div>
-          <div class="product-nav-dropdown">
-            <a class="product-nav-link" href="">
-              <img class="product-nav-img top-image-drop" width="90%" alt="img"
-                src="https://static1.lenskart.com/media/desktop/img/June22/prog11.jpg" />
-              <div class="product-nav-title">Progressive Lenses</div>
-            </a>
-            <a class="product-navlink" href="">
-              <div class="nav-pro-menudrop">
-                <div class="nav-pro-menudrop-item">
-                  <div>Progressives</div>
-                  <div>Not Expensive</div>
-                </div>
-                <div class="nav-pro-menudrop-item1">
-                  <div>Starting</div>
-                  <div>$4200</div>
-                </div>
-              </div>
-            </a>
+          <div class="bottom_right">
+            <span>Follow us at</span>
+            <span
+              ><a class="footer_link" href="#"
+                ><i class="fab fa-facebook-f"></i></a
+            ></span>
+            <span
+              ><a class="footer_link" href="#"
+                ><i class="fab fa-instagram"></i></a
+            ></span>
+            <span
+              ><a class="footer_link" href="#"><i class="fab fa-twitter"></i></a
+            ></span>
           </div>
         </div>
       </div>
-    </section>
-    <marquee behavior="" direction="up">
-      <div class="nav-banner">
-        <img
-          src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/plp/WhatsApp%20Image%202023-02-05%20at%2010.23.28%20PM%20(1).jpeg"
-          alt="banner" width="100%" />
-      </div>
-    </marquee>
-    <section class="banner_slider_section">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/marble/web.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Oct22/kiara/Refresh-Banner-Web.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Feb23/Launch%20banner.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Nov22/mens-edit/desktop.jpg"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Nov22/tinted/launch-desk.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Nov22/LK-Airflex-desktop-banner.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Dec22/blend-edit/web.jpg"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Dec22/new-collection/desktop.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Feb23/vday/home/Web.jpg"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img
-                src="https://static1.lenskart.com/media/desktop/img/Feb23/23feb/wedding%20edit/web-home.gif"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Jan23/23jan/hooper/hooper-web.jpg"
-                class="d-block w-100" alt="..."></a>
-          </div>
-          <div class="carousel-item">
-            <a href=""> <img src="https://static1.lenskart.com/media/desktop/img/Nov22/trans1.gif" class="d-block w-100"
-                alt="..."></a>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <section>
-      <h4 class="fit_heading fit_mar_top">FIND THE PERFECT FIT</h4>
-
-      <div class="fitSection">
-        <div class="fitSection-wrapper">
-          <div class="left_side">
-            <a href="/"><img class="left-img marbtn" src="images/eye-square10.webp" alt=""></a>
-            <a href="/"><img class="left-img" src="images/power-sun-square.webp" alt=""></a>
-          </div>
-          <div class="right_side">
-            <a href="/"> <img class="right-img marbtn" src="images/ce-square.webp" alt=""></a>
-            <a href="/"><img class="right-img marbtn" src="images/sun-square.webp" alt=""></a>
-            <a href="/"><img class="right-img" src="images/Banner03_TileDesktop.webp" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h4 class="buyheading">BUY IT YOUR WAY</h4>
-      <div class="buySection">
-        <div class="buySection-wrapper">
-          <div class="buy_left_side">
-            <img class="buy_img buy_pad_btm" src="images/call1800.webp" alt="">
-            <img class="buy_img" src="images/hto.webp" alt="">
-
-          </div>
-          <div class="buy_right_side">
-            <img class="buy_img buy_pad_btm" src="images/whatsapp.webp" alt="">
-            <img class="buy_img" src="images/stores.webp" alt="">
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <section class="customer_review_section">
-      <h3 class="section_heading">meet our happy customers</h3>
-      <div class="review_container">
-        <div class="review_clips">
-          <iframe width="100%" height="278" src="https://www.youtube.com/embed/HYPqf_eVvvM" title="Customer Reviews"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="review_clips">
-          <iframe width="100%" height="278" src="https://www.youtube.com/embed/SQm3RxXRunw"
-            title="Lenskart Customer Testimonial" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <div class="review_clips">
-          <iframe width="100%" height="278" src="https://www.youtube.com/embed/IZpUQ-S_LcM"
-            title="Lenskart - The Customer Diaries - Anurag" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer>
-    <div class="footer_container">
-      <h2 class="footer_heading">Buy The Best Eyewear From Lenskart</h2>
-      <p>Lenskart Is The Leading E-Commerce Portal For Eyewear In India. It Has Revolutionised The Eyewear
-        Industry In The Country With Its Omni-Channel Approach. From An Ever-Growing Number Of Offline Stores
-        Across Major Cities In The Country To Innovative Integration Of Technology While Purchasing Online,
-        Lenskart Caters To Every Customer With Several Deals And Offers.</p>
-      <p>A One-Stop Online Solution For Purchasing Eyewear And Its Accessories, Lenskart Delivers Them Right At
-        Your Doorstep With Convenient Methods Of Payment. <a class="footer_link" href="#">Sunglasses</a> As Well
-        As <a class="footer_link" href="#">Eyeglasses</a> Are Available For Men And Women In A Diverse Array Of
-        Styles And Trendy Colours. If You Want To Try Out Contact Lenses, Pick The Ones Of Your Choice From The
-        Extensive Variety Of Coloured <a class="footer_link" href="#">Contact Lenses</a> From Our Online Store.
-      </p>
-
-      <div class="footer_product_accordion">
-        <div class="product_acc">
-          <button class="showDetail">SUNGLASSES</button>
-
-          <div class="info_panel">
-            <div> Sunglasses help protect the eyes from the damaging UV rays of the sun and,
-              today, they have
-              become an essential fashion accessory too. The classic styles of shades never go out of
-              fashion
-              as they are reiterated with each passing trend to suit one’s contemporary style sensibility.
-              With different combinations of frame and lens colours, sunglasses appeal to all ages
-              irrespective of gender. Luxury eyewear brands such as Linda Farrow and Tom Ford, among
-              others
-              have an excellent collection of aviator-shaped and cat-eye goggles that go an extra mile to
-              create style and provide luxury. Vogue, Tommy Hilfiger, French Connection, Ray-Ban, John
-              Jacobs
-              and Vincent Chase, on the other hand, have plenty of sunglasses for women as well in various
-              elegant colours and chic styles.
-            </div>
-            Ray-Ban Goggles Are Popular For Their Timeless Frame Designs Such As The Aviator-Shaped,
-            <a class="footer_link" href="#">Wayfarer-Shaped</a> And Browline Styles. These Shades Are
-            Available In Plenty Of Colours On The
-            Frames And Lenses That Would Go With Any Modern Outfit Effortlessly. Brands Such As Carrera And
-            Calvin Klein, Among Several Others Have Excellent Variations Of The Classic Aviator-Shaped And
-            Wayfarer-Shaped Goggles With Sporty And Suave Lens Colours. <a class="footer_link" href="#">Sunglasses</a>
-            For Men Are Available
-            From The Best Brands Such As Hugo Boss, Oakley And John Jacobs, Among Others, And Are Ideal For
-            Various Occasions.
-            <div class="brand_products">
-              <b>Popular Sunglasses Brands</b>- <a class="footer_link" href="#">Ray Ban Sunglasses</a>, <a
-                class="footer_link" href="#">Oakley Sunglasses</a>, <a class="footer_link" href="#">Carrera
-                Sunglasses</a>, <a class="footer_link" href="#">IDEE
-                Sunglasses</a>
-            </div>
-          </div>
-          <div class="bottom_border"></div>
-        </div>
-        <div class="product_acc">
-          <button class="showDetail">EYEGLASSES</button>
-          <div class="info_panel">
-            <div> Lenskart has a wide range of styles that are highly fashionable. You can try out the
-              full-rimmed
-              and half-rimmed eyeglasses that come with various frame and temple materials such as
-              acetate,
-              stainless steel, TR-90, and metal, among others. Rimless spectacles also come in various
-              styles
-              with sporty and elegant temples.
-            </div>
-            Various Brands Such As Ray-Ban, Oakley, Carrera, John Jacobs, Lee Cooper, And Oakley Have An
-            Amazing Variety Of Frame And Temple Styles. The Browline, Round, Rectangular, Square And
-            Wayfarer-Shaped Spectacles Are Some Of The Best Styles Of Men’s Eyeglasses And They Come With
-            Sophisticated As Well As Sporty Frame And Temple Colours. Spectacles With Tortoise Shell Frames
-            Have A Vintage Appeal And You Can Easily Choose From The Various Styles Available At Lenskart.
-
-            <div class="brand_products">
-              <b>Top Brand Eyeglasses</b>-
-              <a class="footer_link" href="#">Ray-Ban Eyeglasses</a>,
-              <a class="footer_link" href="#">Carrera Eyeglasses</a>,
-              <a class="footer_link" href="#">Oakley</a>,
-              <a class="footer_link" href="#">Men Eyeglasses</a>,
-              <a class="footer_link" href="#">Women Eyeglasses</a>,
-              <a class="footer_link" href="#">John Jacob Eyeglasses</a>
-            </div>
-            <div class="brand_products">
-              <b>Best Styles In Eyeglasses</b>-
-              <a class="footer_link" href="#">Full Rim Eyeglasses</a>,
-              <a class="footer_link" href="#">Half Rim Eyeglasses</a>,
-              <a class="footer_link" href="#">Rimless Eyeglasses</a>,
-              <a class="footer_link" href="#">Cat EyeEyeglasses</a>,
-              <a class="footer_link" href="#">Aviator Shapes Eyeglasses</a>,
-              <a class="footer_link" href="#">Wayfarer Shapes Eyeglasses</a>
-            </div>
-          </div>
-          <div class="bottom_border"></div>
-        </div>
-        <div class="product_acc">
-          <button class="showDetail">CONTACT LENSES</button>
-          <div class="info_panel">
-            <div> Lenskart has various types of contact lenses. Brands such as Aqualens,
-              Bausch & Lomb, Johnson &
-              Johnson, Acuvue, Alcon, and Purevision, among others have yearly, monthly, 2-weekly, and
-              daily
-              disposable contact lenses. Specially designed toric contact lenses are also available from
-              these
-              brands.
-            </div>
-            <a class="footer_link" href="#">Coloured Contact Lenses </a> Are Available With And Without
-            Power, And Some Of Them Have UV
-            Protection As Well. The Unique Colours That You Could Try Are Amethyst, Hazel, Green, Turquoise,
-            Blue, Brown, And Grey, Which Look Quite Stylish. Made From The Best Materials That Allow Ample
-            Oxygen Supply To The Eyes, These Contact Lenses Sit Perfectly On The Eyes And Can Be Worn
-            Anywhere.
-
-            <p>
-              Lenskart Also Offers A Wide Range Of Contact Lens Accessories. To Clean Your Contacts, You
-              Can
-              Get The Best Contact Lens Solutions From Our Online Store, Which Are Easy To Use And
-              Effective
-              In Keeping Your Eyes Healthy.
-            </p>
-            <div class="brand_products">
-              <b>Popular Contact Lenses Brands</b>-
-              <a class="footer_link" href="#">Bausch & Lomb Contact Lenses</a>,
-              <a class="footer_link" href="#">Ciba Vision Contact Lenses</a>,
-              <a class="footer_link" href="#">Johnson & Johnson Contact Lenses</a>
-            </div>
-            <div class="brand_products">
-              <b>Contact Lenses By Type</b>-
-              <a class="footer_link" href="#">Monthly Disposable</a>,
-              <a class="footer_link" href="#">Daily Disposable</a>,
-              <a class="footer_link" href="#">Toric Contact Lenses</a>
-            </div>
-            <div><a class="footer_link" href="#">Lenses Directory</a></div>
-          </div>
-          <div class="bottom_border"></div>
-        </div>
-      </div>
-
-      <div class="footer_nav">
-        <div class="nav_left">
-          <div class="footer_service_col">
-            <h3>Services</h3>
-            <ul>
-              <li><a class="footer_link" href="#">Store Locator</a></li>
-              <li><a class="footer_link" href="#">Enter My Power</a></li>
-              <li><a class="footer_link" href="#">Buying Guide</a></li>
-              <li><a class="footer_link" href="#">Frame Size</a></li>
-            </ul>
-          </div>
-          <div class="footer_about_col">
-            <h3>About Us</h3>
-            <ul>
-              <li><a class="footer_link" href="#"> We Are Hiring</a></li>
-              <li><a class="footer_link" href="#">Refer & Earn</a></li>
-              <li><a class="footer_link" href="#">About Us</a></li>
-              <li><a class="footer_link" href="#">Lenskart Coupons</a></li>
-            </ul>
-          </div>
-          <div class="footer_help_col">
-            <h3>Help</h3>
-            <ul>
-              <li><a class="footer_link" href="#">FAQ's</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="nav_right">
-          <div class="nav_right_wrap">
-            <div class="appStores">
-              <span><img src="./img/play-store.svg" alt="play store"></span>
-              <span><img src="./img/app-store.svg" alt="app store"></span>
-            </div>
-
-            <p class="download_text">Download Lenskart App to buy</p>
-            <p class="download_text">Eyeglasses, Sunglasses and Contact Lenses</p>
-
-          </div>
-        </div>
-      </div>
-
-      <hr>
-      <div class="footer_bottom">
-        <div class="bottom_left">
-          <span><a class="footer_link" href="#">T & C</a></span>
-          <span><a class="footer_link" href="#">Privacy</a></span>
-          <span><a class="footer_link" href="#">Disclaimer</a></span>
-        </div>
-        <div class="bottom_right">
-          <span>Follow us at</span>
-          <span><a class="footer_link" href="#"><i class="fab fa-facebook-f"></i></a></span>
-          <span><a class="footer_link" href="#"><i class="fab fa-instagram"></i></a></span>
-          <span><a class="footer_link" href="#"><i class="fab fa-twitter"></i></a></span>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="index.js"></script>
-</body>
-
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
